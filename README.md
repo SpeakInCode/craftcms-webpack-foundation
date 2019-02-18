@@ -4,14 +4,14 @@
 ---
 &nbsp;
 
-### Step 1 - Install / Setup Craft CMS
+### Step 1 - Install / Setup Craft CMS (like normal)
 * **Install Craft CMS**
   * Run `composer create-project craftcms/craft <PROJECT_NAME>`
   
 
 * **Setup Craft CMS**
   * Once composer has installed the project `cd <PROJECT_NAME>`
-  * Create a new database in yout local environment **before** running `./craft setup`
+  * Create a new database in your local environment **before** running `./craft setup`
   * Run `./craft setup` and follow the prompts.
   
 This step is a normal **Craft CMS** install / setup. For more detailed instructions or if your having problems, refer to there docs: 
