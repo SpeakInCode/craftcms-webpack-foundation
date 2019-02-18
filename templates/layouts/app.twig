@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="{{ craft.app.language|slice(0,2) }}">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {# Inline / Critical CSS #}
+    {% if
+        block('inlineCss')|length or
+        block('criticalCss')|length and
+        not craft.config.devMode
+    %}
+        <style>
+            {% block criticalCss %}{% endblock %}
+            {% block inlineCss %}{% endblock %}
+        </style>
+    {% endif %}
+
+    {# CSS #}
+    <link rel="stylesheet" href="./assets/dist/main.css">
+
+</head>
+
+<body>
+
+    <main class="site" role="document">
+        {% block content %}{% endblock %}
+    </main>
+
+    {# Javascript #}
+    <script src="./assets/dist/site.js"></script>
+
+    {# Inline Javascript#}
+    {% block inlineJs %}{% endblock %}
+
+</body>
+</html>
+
+
