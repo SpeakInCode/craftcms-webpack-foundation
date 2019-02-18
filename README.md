@@ -1,9 +1,10 @@
 # Webpack build process for Craft CMS
-### Using Laravel Mix & Foundation
+## Using Laravel Mix & Foundation
 
 ---
+&nbsp;
 
-#### Step 1 - Install / Setup Craft CMS
+### Step 1 - Install / Setup Craft CMS
 * **Install Craft CMS**
   * Run `composer create-project craftcms/craft <PROJECT_NAME>`
   
@@ -19,20 +20,20 @@ This step is a normal **Craft CMS** install / setup. For more detailed instructi
 
 ---
 
-#### Step 2 - Download this repo
+### Step 2 - Download this repo
 * [**Download this Repo**](https://github.com/SpeakInCode/craftcms-webpack-foundation/archive/master.zip)
   * We're going to [**download the zip**](https://github.com/SpeakInCode/craftcms-webpack-foundation/archive/master.zip) of this repo rather than `clone` it because we're going to move it into the existing **Craft CMS** project folder we just created.
   * After downloading this repo extract it and move the folder's contents into the **Craft CMS** project that you just created. It will ask you if you want to override the existing `templates` directory, answer yes to this.
   
 ---
 
-#### Step 3 - Install dependencies
+### Step 3 - Install dependencies
 * From the root of your **Craft CMS** project, run `yarn` or if you don't have `yarn`, run `npm install`.
 * Now to compile run either `yarn run watch` or `npm run watch`
 
 ---
 
-#### Step 4 - BrowserSync
+### Step 4 - BrowserSync
 * To have your code auto refresh in the browser on save, be sure to add `:3000` to your base URL when viewing the front-end of your site.
 
 ---
