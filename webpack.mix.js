@@ -40,6 +40,6 @@ mix
   injectChanges: true,
   files: [
     './web/assets/dist/*', // watch css/js
-    './templates/*' // watch html/twig
+    './templates/**/*' // watch html/twig
   ]
 })
